@@ -1,0 +1,17 @@
+
+
+
+This is my first open text 
+Made while learning python
+
+cd Desktop/ = Go to Desktop 
+mkdir  Story = Make directory/folder called Story 
+Cd Story = Go to created Story folder 
+Ls = Check if there are any files/folders In Story folder
+Touch Chapter.txt = create a text file called chapter in Story folder
+Open chapter.txt= Open the created text file
+
+
+Initiate git in terminal - git init 
+ls -a = See hidden files in terminal 
+
