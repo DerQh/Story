@@ -1,0 +1,99 @@
+Last login: Mon Jul 18 12:51:02 on ttys002
+sana@Freds-MacBook-Pro ~ % cd Desktop/
+sana@Freds-MacBook-Pro Desktop % ls
+ PROJECTS
+Bootstrap-5.2.0
+Cool, Fun & Easy Python Projects for Beginners (with Code).pdf
+Programming
+Story
+Web Development
+cheat_sheet.pdf
+sana@Freds-MacBook-Pro Desktop % cd Story
+sana@Freds-MacBook-Pro Story % ls
+chapter1.txt
+sana@Freds-MacBook-Pro Story % open chapter.txt
+The file /Users/sana/Desktop/Story/chapter.txt does not exist.
+sana@Freds-MacBook-Pro Story % open chapter1.txt
+sana@Freds-MacBook-Pro Story % git init
+Reinitialized existing Git repository in /Users/sana/Desktop/Story/.git/
+sana@Freds-MacBook-Pro Story % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   chapter1.txt
+
+sana@Freds-MacBook-Pro Story % touch chapter2.txt
+sana@Freds-MacBook-Pro Story % touch chapter3.txt
+sana@Freds-MacBook-Pro Story % git add chapter2.txt
+sana@Freds-MacBook-Pro Story % git add chapter3.txt
+sana@Freds-MacBook-Pro Story % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   chapter1.txt
+	new file:   chapter2.txt
+	new file:   chapter3.txt
+
+sana@Freds-MacBook-Pro Story % git commit -m "Completed Chapters"
+[master (root-commit) 30e634e] Completed Chapters
+ 3 files changed, 17 insertions(+)
+ create mode 100644 chapter1.txt
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+sana@Freds-MacBook-Pro Story % open chapter3,txt
+The file /Users/sana/Desktop/Story/chapter3,txt does not exist.
+sana@Freds-MacBook-Pro Story % open chapter3.txt
+sana@Freds-MacBook-Pro Story % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sana@Freds-MacBook-Pro Story % git commit -m 'Complete Chapter 3'
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sana@Freds-MacBook-Pro Story % git log
+commit 30e634ebb1c685b81ec7eb1b8a0017bb8eadbabd (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Mon Jul 18 13:12:01 2022 +0300
+
+    Completed Chapters
+sana@Freds-MacBook-Pro Story %  git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   chapter2.txt
+	modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sana@Freds-MacBook-Pro Story % git diff chapter2.txt
+diff --git a/chapter2.txt b/chapter2.txt
+index e69de29..ad917ea 100644
+--- a/chapter2.txt
++++ b/chapter2.txt
+@@ -0,0 +1 @@
++Thrtntwj nn want war 
+\ No newline at end of file
+sana@Freds-MacBook-Pro Story % git checkout chapter2.txt
+Updated 1 path from the index
+sana@Freds-MacBook-Pro Story % git log
+commit 30e634ebb1c685b81ec7eb1b8a0017bb8eadbabd (HEAD -> master)
+Author: Your Name <you@example.com>
+Date:   Mon Jul 18 13:12:01 2022 +0300
+
+    Completed Chapters
+sana@Freds-MacBook-Pro Story % 

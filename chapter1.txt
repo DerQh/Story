@@ -15,3 +15,11 @@ Open chapter.txt= Open the created text file
 Initiate git in terminal - git init 
 ls -a = See hidden files in terminal 
 
+
+Git log = 
+
+Git commit - m 'name' = name the Saving point of the files that have been committed
+Git add = add a file to git and commit 
+Git status = checks the status 
+Git diff name of file = checks the changes made on the names file 
+Git checkout file name = restores the file to the previous status before 
